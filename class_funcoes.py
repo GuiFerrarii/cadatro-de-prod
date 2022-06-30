@@ -4,7 +4,6 @@ class Funcoes:
         self.listaprodutos = []
 
 
-
     def salvar_informaçoes(self):
         self.listaprodutos.append(sistema())
 
@@ -24,10 +23,10 @@ class Funcoes:
     def procurar_por_cod(self):
         controle = input('Informe o codigo:')
         for i in range(len(self.listaprodutos)):
-            if controle != self.listaprodutos[i].cod:
-                break
-            elif controle == self.listaprodutos[i].cod:
+            if controle == self.listaprodutos[i].cod:
                 print('Código: ', self.listaprodutos[i].cod,
                       'descriçao: ', self.listaprodutos[i].desc,
                       'fabricante: ', self.listaprodutos[i].fabricante,
                       'quantidade: ', self.listaprodutos[i].quant)
+
+
